@@ -1,0 +1,21 @@
+#title {
+    color: #6b9080;
+    font-size: 64px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-weight: 900;
+    height: 100;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #eaf4f4;
+}
+
+#intro {
+    color: #a4c3b2;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    margin-top: 10px;
+}
