@@ -64,7 +64,7 @@ export default function CSPage() {
               <CardContent>
                 <p className="mb-4">A responsive personal website showcasing my portfolio, skills, and interests.</p>
                 <div className="flex gap-4">
-                  <Link href="#" className="flex items-center gap-1 text-sm text-primary hover:underline">
+                  <Link href="https://github.com/ezshrimps" className="flex items-center gap-1 text-sm text-primary hover:underline">
                     <Github className="h-4 w-4" />
                     <span>GitHub</span>
                   </Link>

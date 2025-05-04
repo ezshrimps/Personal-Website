@@ -8,22 +8,22 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-1 container py-12 md:py-24 space-y-12">
+      <div className="flex-1 py-12 md:py-24 space-y-12">
         <section className="flex flex-col items-center text-center space-y-6">
           <Avatar className="h-32 w-32">
-            <AvatarImage src="/placeholder.svg?height=128&width=128" alt="Zihao Xia" />
+            <AvatarImage src="/ezshrimps.jpg" alt="Zihao Xia" />
             <AvatarFallback>ZX</AvatarFallback>
           </Avatar>
-          <div className="space-y-2">
+          <div className="space-y-2 text-center max-w-[700px]">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">Zihao Xia</h1>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
+            <p className="text-muted-foreground md:text-xl">
               Welcome to my personal website! I'm a computer science student, photographer, rhythm game enthusiast, and
               pickleball player.
             </p>
           </div>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader className="flex flex-row items-center gap-4">
               <Code className="h-8 w-8" />
