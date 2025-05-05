@@ -22,10 +22,10 @@ export default function Home() {
           </Avatar>
           <div className="space-y-2 text-center max-w-[700px]">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
-              EzShrimps
+              Zihao Xia
             </h1>
             <p className="text-muted-foreground md:text-xl">
-              Zihao Xia
+              EzShrimps
             </p>
           </div>
         </section>

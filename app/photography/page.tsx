@@ -1,6 +1,6 @@
-import { Navbar } from "@/components/navbar";
-import Image from "next/image";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Navbar } from "@/components/navbar"
+import Image from "next/image"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function PhotographyPage() {
   return (
@@ -10,8 +10,7 @@ export default function PhotographyPage() {
         <section className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tighter">Photography</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            A collection of my favorite photographs across different genres and
-            styles.
+            A collection of my favorite photographs across different genres and styles.
           </p>
         </section>
 
@@ -24,14 +23,23 @@ export default function PhotographyPage() {
           </TabsList>
           <TabsContent value="landscape" className="mt-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="overflow-hidden rounded-lg">
+              <div className="col-span-1 md:col-span-2 lg:col-span-3 overflow-hidden rounded-lg aspect-[16/9]">
+                <Image
+                  src="/gallery/golden_bridge.jpg"
+                  alt="Featured landscape photo"
+                  width={1200}
+                  height={600}
+                  className="object-cover w-full h-full transition-transform hover:scale-105"
+                />
+              </div>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="overflow-hidden rounded-lg aspect-[4/3]">
                   <Image
-                    src={`/placeholder.svg?height=400&width=600&text=Landscape+${i}`}
+                    src={`/gallery/landscape_photo${i}.jpg`}
                     alt={`Landscape photo ${i}`}
                     width={600}
                     height={400}
-                    className="object-cover w-full h-64 transition-transform hover:scale-105"
+                    className="object-cover w-full h-full transition-transform hover:scale-105"
                   />
                 </div>
               ))}
@@ -39,14 +47,23 @@ export default function PhotographyPage() {
           </TabsContent>
           <TabsContent value="portrait" className="mt-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="overflow-hidden rounded-lg">
+              <div className="col-span-1 md:col-span-2 lg:col-span-3 overflow-hidden rounded-lg aspect-[16/9]">
+                <Image
+                  src="/placeholder.svg?height=600&width=1200&text=Featured+Portrait"
+                  alt="Featured portrait photo"
+                  width={1200}
+                  height={600}
+                  className="object-cover w-full h-full transition-transform hover:scale-105"
+                />
+              </div>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="overflow-hidden rounded-lg aspect-[4/3]">
                   <Image
                     src={`/placeholder.svg?height=400&width=600&text=Portrait+${i}`}
                     alt={`Portrait photo ${i}`}
                     width={600}
                     height={400}
-                    className="object-cover w-full h-64 transition-transform hover:scale-105"
+                    className="object-cover w-full h-full transition-transform hover:scale-105"
                   />
                 </div>
               ))}
@@ -54,14 +71,23 @@ export default function PhotographyPage() {
           </TabsContent>
           <TabsContent value="street" className="mt-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="overflow-hidden rounded-lg">
+              <div className="col-span-1 md:col-span-2 lg:col-span-3 overflow-hidden rounded-lg aspect-[16/9]">
+                <Image
+                  src="/placeholder.svg?height=600&width=1200&text=Featured+Street"
+                  alt="Featured street photo"
+                  width={1200}
+                  height={600}
+                  className="object-cover w-full h-full transition-transform hover:scale-105"
+                />
+              </div>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="overflow-hidden rounded-lg aspect-[4/3]">
                   <Image
                     src={`/placeholder.svg?height=400&width=600&text=Street+${i}`}
                     alt={`Street photo ${i}`}
                     width={600}
                     height={400}
-                    className="object-cover w-full h-64 transition-transform hover:scale-105"
+                    className="object-cover w-full h-full transition-transform hover:scale-105"
                   />
                 </div>
               ))}
@@ -69,14 +95,23 @@ export default function PhotographyPage() {
           </TabsContent>
           <TabsContent value="abstract" className="mt-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="overflow-hidden rounded-lg">
+              <div className="col-span-1 md:col-span-2 lg:col-span-3 overflow-hidden rounded-lg aspect-[16/9]">
+                <Image
+                  src="/placeholder.svg?height=600&width=1200&text=Featured+Abstract"
+                  alt="Featured abstract photo"
+                  width={1200}
+                  height={600}
+                  className="object-cover w-full h-full transition-transform hover:scale-105"
+                />
+              </div>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="overflow-hidden rounded-lg aspect-[4/3]">
                   <Image
                     src={`/placeholder.svg?height=400&width=600&text=Abstract+${i}`}
                     alt={`Abstract photo ${i}`}
                     width={600}
                     height={400}
-                    className="object-cover w-full h-64 transition-transform hover:scale-105"
+                    className="object-cover w-full h-full transition-transform hover:scale-105"
                   />
                 </div>
               ))}
@@ -91,17 +126,15 @@ export default function PhotographyPage() {
               <h3 className="font-medium">Cameras</h3>
               <ul className="list-disc list-inside text-muted-foreground">
                 <li>Sony Alpha a7 III</li>
-                <li>Canon EOS 5D Mark IV</li>
-                <li>Fujifilm X-T4</li>
+                <li>Sony Alpha a7R V</li>
               </ul>
             </div>
             <div className="space-y-2">
               <h3 className="font-medium">Lenses</h3>
               <ul className="list-disc list-inside text-muted-foreground">
                 <li>Sony FE 24-70mm f/2.8 GM</li>
-                <li>Canon EF 50mm f/1.4 USM</li>
-                <li>Fujifilm XF 16-55mm f/2.8 R LM WR</li>
                 <li>Sony FE 85mm f/1.8</li>
+                <li>Tamron FE 28-200mm f/3.5-5.6</li>
               </ul>
             </div>
           </div>
@@ -109,11 +142,9 @@ export default function PhotographyPage() {
       </div>
       <footer className="border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 text-center">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Zihao Xia. All rights reserved.
-          </p>
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Zihao Xia. All rights reserved.</p>
         </div>
       </footer>
     </main>
-  );
+  )
 }
