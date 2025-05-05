@@ -1,5 +1,7 @@
+"use client";
 import { Navbar } from "@/components/navbar"
 import { Image } from '@imagekit/next'
+import { CldImage } from 'next-cloudinary'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function PhotographyPage() {
@@ -24,14 +26,17 @@ export default function PhotographyPage() {
           <TabsContent value="landscape" className="mt-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="col-span-1 md:col-span-2 lg:col-span-3 overflow-hidden rounded-lg aspect-[16/9]">
-                <Image
-                  urlEndpoint = "https://ik.imagekit.io/ezshrimps/"
-                  src="/golden_bridge.jpg?updatedAt=1746432310716"
-                  alt="Featured landscape photo"
-                  width={1200}
-                  height={600}
-                  className="object-cover w-full h-full transition-transform hover:scale-105"
-                />
+              <CldImage
+                src="https://res.cloudinary.com/dzy65b7jg/image/upload/w_2000,q_90,f_auto/v1746439209/lower-antelopte-canyon_rr9qey.jpg" // Use this sample image or upload your own via the Media Explorer
+                alt="lower-entelope"
+                width="600" // Transform the image: auto-crop to square aspect_ratio
+                height="400"
+                className="object-cover w-full h-full transition-transform hover:scale-105"
+                crop={{
+                  type: 'auto',
+                  source: true
+                }}
+              />
               </div>
               {[1, 2, 3, 4, 5].map((i) => (
                 <div key={i} className="overflow-hidden rounded-lg aspect-[4/3]">
