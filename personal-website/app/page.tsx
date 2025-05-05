@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import { Code, Camera, Gamepad2, RatIcon as Racquet } from "lucide-react";
+import { Code, Camera, Gamepad2, RatIcon as Racquet, Medal } from "lucide-react";
 
 export default function Home() {
   return (
@@ -22,11 +22,10 @@ export default function Home() {
           </Avatar>
           <div className="space-y-2 text-center max-w-[700px]">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
-              Zihao Xia
+              EzShrimps
             </h1>
             <p className="text-muted-foreground md:text-xl">
-              Welcome to my personal website! I'm a computer science student,
-              photographer, rhythm game enthusiast, and pickleball player.
+              Zihao Xia
             </p>
           </div>
         </section>
@@ -36,7 +35,7 @@ export default function Home() {
             <CardHeader className="flex flex-row items-center gap-4">
               <Code className="h-8 w-8" />
               <div>
-                <CardTitle>Computer Science Student</CardTitle>
+                <CardTitle>Software Engineer</CardTitle>
                 <CardDescription>
                   My academic journey and projects
                 </CardDescription>
@@ -81,7 +80,7 @@ export default function Home() {
             <CardHeader className="flex flex-row items-center gap-4">
               <Gamepad2 className="h-8 w-8" />
               <div>
-                <CardTitle>Rhythm Game Player</CardTitle>
+                <CardTitle>Rhythm Gamer</CardTitle>
                 <CardDescription>My gaming experiences</CardDescription>
               </div>
             </CardHeader>
@@ -101,7 +100,7 @@ export default function Home() {
 
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader className="flex flex-row items-center gap-4">
-              <Racquet className="h-8 w-8" />
+              <Medal className="h-8 w-8" />
               <div>
                 <CardTitle>Pickleball Player</CardTitle>
                 <CardDescription>My sports activities</CardDescription>

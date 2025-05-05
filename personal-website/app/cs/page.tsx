@@ -31,7 +31,7 @@ export default function CSPage() {
             <CardContent className="pt-6">
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-semibold">Computer Science Degree</h3>
+                  <h3 className="font-semibold">B.S. in Computer Science</h3>
                   <p className="text-sm text-muted-foreground">
                     University of California, Irvine 2022 - 2026
                   </p>
@@ -40,6 +40,26 @@ export default function CSPage() {
                   Studying algorithms, data structures, software engineering,
                   and more. Currently maintaining a 3.76 GPA with a focus on
                   artificial intelligence and visual computing.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-2xl font-semibold">Work Experience</h2>
+          <Card>
+            <CardContent className="pt-6">
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold">ICS Learning Assistant</h3>
+                  <p className="text-sm text-muted-foreground">
+                  Donald Bren School of Information and Computer Science, January 2024 - June 2024
+                  </p>
+                </div>
+                <p>
+                Guided over 30 students through Python concepts, 
+                helping them build a solid foundation and progress from basic to advanced problem-solving.
                 </p>
               </div>
             </CardContent>
@@ -108,6 +128,59 @@ export default function CSPage() {
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <Card>
+                <CardHeader>
+                  <CardTitle>Maimai Wordle</CardTitle>
+                  <CardDescription>
+                    Next.js, Typescript, Tailwind CSS
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="mb-4">
+                    A song guessing game that has over 2000 visits.
+                  </p>
+                  <div className="flex gap-4">
+                    <Link
+                      href="https://github.com/yukineko2233/v0-maimai-wordle"
+                      className="flex items-center gap-1 text-sm text-primary hover:underline"
+                    >
+                      <Github className="h-4 w-4" />
+                      <span>GitHub</span>
+                    </Link>
+                    <Link
+                      href="https://maimai.yukineko2233.net/"
+                      className="flex items-center gap-1 text-sm text-primary hover:underline"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                      <span>Try it online</span>
+                    </Link>
+                  </div>
+                </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Zot Fitness</CardTitle>
+                <CardDescription>React, DynamoDB, Gemini API</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4">
+                  A health tracker WebApp for fitness enthusiasts.
+
+                </p>
+                <div className="flex gap-4">
+                  <Link
+                    href="https://github.com/jeremyunoz/ZotFitness"
+                    className="flex items-center gap-1 text-sm text-primary hover:underline"
+                  >
+                    <Github className="h-4 w-4" />
+                    <span>GitHub</span>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
             <Card>
               <CardHeader>
                 <CardTitle>Personal Website</CardTitle>
@@ -122,14 +195,14 @@ export default function CSPage() {
                 </p>
                 <div className="flex gap-4">
                   <Link
-                    href="#"
+                    href="https://github.com/ezshrimps/Personal-Website"
                     className="flex items-center gap-1 text-sm text-primary hover:underline"
                   >
                     <Github className="h-4 w-4" />
                     <span>GitHub</span>
                   </Link>
                   <Link
-                    href="#"
+                    href="https://ezshrimps.com"
                     className="flex items-center gap-1 text-sm text-primary hover:underline"
                   >
                     <ExternalLink className="h-4 w-4" />
@@ -139,65 +212,6 @@ export default function CSPage() {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Machine Learning Project</CardTitle>
-                <CardDescription>
-                  Python, TensorFlow, Scikit-learn
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4">
-                  An image classification model trained on a custom dataset with
-                  over 90% accuracy.
-                </p>
-                <div className="flex gap-4">
-                  <Link
-                    href="#"
-                    className="flex items-center gap-1 text-sm text-primary hover:underline"
-                  >
-                    <Github className="h-4 w-4" />
-                    <span>GitHub</span>
-                  </Link>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-1 text-sm text-primary hover:underline"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    <span>Research Paper</span>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Mobile App</CardTitle>
-                <CardDescription>React Native, Firebase</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4">
-                  A cross-platform mobile application for tracking daily habits
-                  and setting goals.
-                </p>
-                <div className="flex gap-4">
-                  <Link
-                    href="#"
-                    className="flex items-center gap-1 text-sm text-primary hover:underline"
-                  >
-                    <Github className="h-4 w-4" />
-                    <span>GitHub</span>
-                  </Link>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-1 text-sm text-primary hover:underline"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    <span>App Store</span>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </section>
       </div>
