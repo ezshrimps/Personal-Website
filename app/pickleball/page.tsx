@@ -31,7 +31,7 @@ export default function PickleballPage() {
               <p>
                 I've since participated in UCI Pickleball Club, improved my
                 skills through regular practice with Taiki and other friends,
-                and become part of a vibrant pickleball community.Hope to
+                and become part of a vibrant pickleball community. Hope to
                 participated in more tournaments and get a 4.0 DUPR rating.
               </p>
             </CardContent>
@@ -105,7 +105,7 @@ export default function PickleballPage() {
                       <div>
                         <h3 className="font-medium">Selkirk Luxx Air Epic</h3>
                         <p className="text-sm text-muted-foreground">
-                          My main paddle for competitive play
+                          Main paddle for competitive play
                         </p>
                       </div>
                     </div>
@@ -120,7 +120,7 @@ export default function PickleballPage() {
                       <div>
                         <h3 className="font-medium">Selkirk Halo Power</h3>
                         <p className="text-sm text-muted-foreground">
-                          Backup paddle with more powerful spin and drive
+                          Backup paddle with more powerful spins and drives
                         </p>
                       </div>
                     </div>
@@ -130,16 +130,14 @@ export default function PickleballPage() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Accessories</CardTitle>
+                  <CardTitle>Ohters</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                    <li>Gamma pickleball grip tape</li>
-                    <li>Fila court shoes with non-marking soles</li>
-                    <li>Moisture-wicking athletic apparel</li>
-                    <li>Dura Fast 40 outdoor pickleballs</li>
-                    <li>Franklin X-40 indoor pickleballs</li>
-                    <li>Specialized pickleball backpack</li>
+                    <li>Nike Vapor 12 Hypermash</li>
+                    <li>Taikimade Overgrip</li>
+                    <li>Wilson wristband</li>
+                    <li>Franklin outdoor pickleballs</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -156,49 +154,15 @@ export default function PickleballPage() {
                     <div className="border-b pb-4">
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="font-medium">Null</h3>
+                          <h3 className="font-medium">Hotpot pickleball</h3>
                           <p className="text-sm text-muted-foreground">
                             June 2077
                           </p>
                         </div>
                         <div className="text-right">
-                          <p className="font-medium">3rd Place</p>
-                          <p className="text-sm text-muted-foreground">
-                            Men's Doubles 4.0
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-b pb-4">
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <h3 className="font-medium">Regional Open</h3>
-                          <p className="text-sm text-muted-foreground">
-                            September 2022
-                          </p>
-                        </div>
-                        <div className="text-right">
-                          <p className="font-medium">Quarter-finalist</p>
-                          <p className="text-sm text-muted-foreground">
-                            Mixed Doubles 3.5
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <h3 className="font-medium">
-                            Community Center Tournament
-                          </h3>
-                          <p className="text-sm text-muted-foreground">
-                            March 2022
-                          </p>
-                        </div>
-                        <div className="text-right">
                           <p className="font-medium">1st Place</p>
                           <p className="text-sm text-muted-foreground">
-                            Men's Singles 3.5
+                            Men's Doubles 4.0
                           </p>
                         </div>
                       </div>
@@ -221,38 +185,14 @@ export default function PickleballPage() {
                         Anteater Recreation Center
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        4 dedicated courts, good lighting
+                        4 courts, reserved online 2 days in advance
                       </p>
-                      <p className="text-sm">⭐⭐⭐⭐⭐</p>
+                      <p className="text-sm">⭐</p>
                     </div>
                     <div>
                       <h3 className="font-medium">Bonita Canyon</h3>
                       <p className="text-sm text-muted-foreground">
-                        4 courts, available weekends only
-                      </p>
-                      <p className="text-sm">⭐⭐⭐⭐</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Indoor Courts</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="font-medium">Memorial Park</h3>
-                      <p className="text-sm text-muted-foreground">
-                        8 dedicated courts, great community
-                      </p>
-                      <p className="text-sm">⭐⭐⭐⭐⭐</p>
-                    </div>
-                    <div>
-                      <h3 className="font-medium">Lakeside Courts</h3>
-                      <p className="text-sm text-muted-foreground">
-                        4 courts, beautiful scenery
+                        4 courts, open match, paddle queueing system
                       </p>
                       <p className="text-sm">⭐⭐⭐⭐</p>
                     </div>

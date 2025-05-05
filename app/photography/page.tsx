@@ -3,6 +3,9 @@ import { Navbar } from "@/components/navbar";
 import { Image, ImageKitProvider } from "@imagekit/next";
 import { CldImage } from "next-cloudinary";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { Instagram, Aperture } from "lucide-react";
 
 export default function PhotographyPage() {
   return (
@@ -15,15 +18,22 @@ export default function PhotographyPage() {
             A collection of my favorite photographs across different genres and
             styles.
           </p>
-          <a
-            href="https://www.instagram.com/ezshrimps/"
-            className="hover:underline"
-          >
-            Instagram
-          </a>
-          <a href="https://500px.com/p/ezshrimps" className="hover:underline">
-            500px
-          </a>
+          <div className="flex gap-4">
+            <Link
+              href="https://www.instagram.com/ezshrimps/"
+              className="flex items-center gap-1 text-sm text-primary hover:underline"
+            >
+              <Instagram className="h-4 w-4" />
+              <span>Instagram</span>
+            </Link>
+            <Link
+              href="https://maimai.yukineko2233.net/"
+              className="flex items-center gap-1 text-sm text-primary hover:underline"
+            >
+              <Aperture className="h-4 w-4" />
+              <span>500px</span>
+            </Link>
+          </div>
         </section>
 
         <Tabs defaultValue="landscape" className="w-full">

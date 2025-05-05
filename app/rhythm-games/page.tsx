@@ -13,13 +13,15 @@ export default function RhythmGamesPage() {
   const games = [
     {
       name: "Maimai DX",
-      description: "a popular arcade rhythm game by Sega featuring tap, slide, and spin gameplay.",
+      description:
+        "a popular arcade rhythm game by Sega featuring tap, slide, and spin gameplay.",
       skill: 85,
       achievements: [
         "DX Rating 16087",
         "Top 50 U.S. Ranking",
         "Pink Version all SSS",
-        "3000+ games played"
+        "3000+ games played",
+        "6th place in Kuma Cup",
       ],
       image: "/maimai-icon.jpg?height=200&width=200&text=Maimai+DX",
     },
@@ -38,9 +40,9 @@ export default function RhythmGamesPage() {
       description: "Rhythm game based on clicking circles to the beat",
       skill: 20,
       achievements: [
-        "6 digit rank",
-        "FC on multiple 6* maps",
-        "100+ hours played",
+        "Top 10 Chinese ranking osu!laser taiko mode",
+        "FC on multiple 4* maps",
+        "50+ hours played",
       ],
       image: "/osu-icon.svg?height=200&width=200&text=osu!",
     },
@@ -50,7 +52,7 @@ export default function RhythmGamesPage() {
       skill: 65,
       achievements: [
         "PTT 12.24",
-        "PM+ on a level 8 song",
+        "PM+(rironji) on a level 8 song",
         "Achieve EX+ on multiple level 10+ songs",
       ],
       image: "arcaea-icon.png?height=200&width=200&text=Arcaea",
@@ -112,7 +114,6 @@ export default function RhythmGamesPage() {
             ))}
           </div>
         </section>
-
       </div>
       <footer className="border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 text-center">

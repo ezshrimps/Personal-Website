@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-1 py-12 justify-center md:py-24 space-y-12">
-        <section className="flex flex-col items-center text-center space-y-6">
+      <div className="flex-1 py-8 justify-center md:py-20 space-y-6">
+        <section className="flex flex-col items-center text-center space-y-4">
           <Avatar className="h-32 w-32">
             <AvatarImage src="/ezshrimps.jpg" alt="Zihao Xia" />
             <AvatarFallback>ZX</AvatarFallback>

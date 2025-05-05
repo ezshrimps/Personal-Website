@@ -54,12 +54,14 @@ export default function CSPage() {
                 <div>
                   <h3 className="font-semibold">ICS Learning Assistant</h3>
                   <p className="text-sm text-muted-foreground">
-                  Donald Bren School of Information and Computer Science, January 2024 - June 2024
+                    Donald Bren School of Information and Computer Science,
+                    January 2024 - June 2024
                   </p>
                 </div>
                 <p>
-                Guided over 30 students through Python concepts, 
-                helping them build a solid foundation and progress from basic to advanced problem-solving.
+                  Guided over 30 students through Python concepts, helping them
+                  build a solid foundation and progress from basic to advanced
+                  problem-solving.
                 </p>
               </div>
             </CardContent>
@@ -128,35 +130,34 @@ export default function CSPage() {
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
             <Card>
-                <CardHeader>
-                  <CardTitle>Maimai Wordle</CardTitle>
-                  <CardDescription>
-                    Next.js, Typescript, Tailwind CSS
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="mb-4">
-                    A song guessing game that has over 2000 visits.
-                  </p>
-                  <div className="flex gap-4">
-                    <Link
-                      href="https://github.com/yukineko2233/v0-maimai-wordle"
-                      className="flex items-center gap-1 text-sm text-primary hover:underline"
-                    >
-                      <Github className="h-4 w-4" />
-                      <span>GitHub</span>
-                    </Link>
-                    <Link
-                      href="https://maimai.yukineko2233.net/"
-                      className="flex items-center gap-1 text-sm text-primary hover:underline"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                      <span>Try it online</span>
-                    </Link>
-                  </div>
-                </CardContent>
+              <CardHeader>
+                <CardTitle>Maimai Wordle</CardTitle>
+                <CardDescription>
+                  Next.js, Typescript, Tailwind CSS
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4">
+                  A song guessing game that has over 2000 visits.
+                </p>
+                <div className="flex gap-4">
+                  <Link
+                    href="https://github.com/yukineko2233/v0-maimai-wordle"
+                    className="flex items-center gap-1 text-sm text-primary hover:underline"
+                  >
+                    <Github className="h-4 w-4" />
+                    <span>GitHub</span>
+                  </Link>
+                  <Link
+                    href="https://maimai.yukineko2233.net/"
+                    className="flex items-center gap-1 text-sm text-primary hover:underline"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    <span>Try it online</span>
+                  </Link>
+                </div>
+              </CardContent>
             </Card>
 
             <Card>
@@ -167,7 +168,6 @@ export default function CSPage() {
               <CardContent>
                 <p className="mb-4">
                   A health tracker WebApp for fitness enthusiasts.
-
                 </p>
                 <div className="flex gap-4">
                   <Link
@@ -185,7 +185,7 @@ export default function CSPage() {
               <CardHeader>
                 <CardTitle>Personal Website</CardTitle>
                 <CardDescription>
-                  Next.js, TypeScript, Tailwind CSS
+                  Next.js, ImageKit, Lucide-React
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -211,7 +211,6 @@ export default function CSPage() {
                 </div>
               </CardContent>
             </Card>
-
           </div>
         </section>
       </div>
