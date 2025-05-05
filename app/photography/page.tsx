@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/navbar"
-import Image from "next/image"
+import { Image } from '@imagekit/next'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function PhotographyPage() {
@@ -25,7 +25,8 @@ export default function PhotographyPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="col-span-1 md:col-span-2 lg:col-span-3 overflow-hidden rounded-lg aspect-[16/9]">
                 <Image
-                  src="/gallery/golden_bridge.jpg"
+                  urlEndpoint = "https://ik.imagekit.io/ezshrimps/"
+                  src="/landscape_photo2.jpg?updatedAt=1746432310716"
                   alt="Featured landscape photo"
                   width={1200}
                   height={600}
