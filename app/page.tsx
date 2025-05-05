@@ -8,7 +8,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import { Code, Camera, Gamepad2, RatIcon as Racquet, Medal } from "lucide-react";
+import {
+  Code,
+  Camera,
+  Gamepad2,
+  RatIcon as Racquet,
+  Medal,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -24,9 +30,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
               Zihao Xia
             </h1>
-            <p className="text-muted-foreground md:text-xl">
-              EzShrimps
-            </p>
+            <p className="text-muted-foreground md:text-xl">EzShrimps</p>
           </div>
         </section>
 
@@ -122,7 +126,7 @@ export default function Home() {
         </section>
       </div>
       <footer className="border-t py-6">
-        <div className="container flex flex-col items-center justify-center gap-4 text-center">
+        <div className="w-full items-center justify-center text-center">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Zihao Xia. All rights reserved.
           </p>

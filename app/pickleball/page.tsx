@@ -24,18 +24,15 @@ export default function PickleballPage() {
             </CardHeader>
             <CardContent>
               <p className="mb-4">
-                I started playing pickleball in 2019 after being introduced to
-                it by friends. What began as a casual weekend activity quickly
-                turned into a passion. I've since participated in local
-                tournaments, improved my skills through regular practice, and
-                become part of a vibrant pickleball community.
+                I started playing pickleball in 2024 winter after geting a
+                paddle as a birthday gift from my friend Allan. What began as a
+                casual after-school activity quickly turned into a passion.
               </p>
               <p>
-                Currently playing at a 4.0 skill level, I enjoy both singles and
-                doubles matches, though I find doubles to be more strategic and
-                engaging. My playing style focuses on consistent dinking and
-                strategic third-shot drops, with a strong preference for control
-                over power.
+                I've since participated in UCI Pickleball Club, improved my
+                skills through regular practice with Taiki and other friends,
+                and become part of a vibrant pickleball community.Hope to
+                participated in more tournaments and get a 4.0 DUPR rating.
               </p>
             </CardContent>
           </Card>
@@ -73,7 +70,9 @@ export default function PickleballPage() {
                   <Users className="h-5 w-5 text-primary" />
                   <div>
                     <p className="font-medium">Preferred Format</p>
-                    <p className="text-sm text-muted-foreground">Singles/Doubles</p>
+                    <p className="text-sm text-muted-foreground">
+                      Singles/Doubles
+                    </p>
                   </div>
                 </div>
               </div>
@@ -97,14 +96,14 @@ export default function PickleballPage() {
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">
                       <Image
-                        src="/placeholder.svg?height=100&width=100&text=Paddle+1"
+                        src="/selkirk_air.jpg?height=100&width=100&text=Paddle"
                         alt="Paddle"
                         width={80}
                         height={80}
                         className="rounded-md"
                       />
                       <div>
-                        <h3 className="font-medium">Selkirk Amped Epic</h3>
+                        <h3 className="font-medium">Selkirk Luxx Air Epic</h3>
                         <p className="text-sm text-muted-foreground">
                           My main paddle for competitive play
                         </p>
@@ -112,18 +111,16 @@ export default function PickleballPage() {
                     </div>
                     <div className="flex items-center gap-4">
                       <Image
-                        src="/placeholder.svg?height=100&width=100&text=Paddle+2"
+                        src="/selkirk_halo.png?height=100&width=100&text=Paddle+2"
                         alt="Paddle"
                         width={80}
                         height={80}
                         className="rounded-md"
                       />
                       <div>
-                        <h3 className="font-medium">
-                          Paddletek Tempest Wave II
-                        </h3>
+                        <h3 className="font-medium">Selkirk Halo Power</h3>
                         <p className="text-sm text-muted-foreground">
-                          Backup paddle with different feel
+                          Backup paddle with more powerful spin and drive
                         </p>
                       </div>
                     </div>
@@ -159,9 +156,9 @@ export default function PickleballPage() {
                     <div className="border-b pb-4">
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="font-medium">City Championship</h3>
+                          <h3 className="font-medium">Null</h3>
                           <p className="text-sm text-muted-foreground">
-                            June 2023
+                            June 2077
                           </p>
                         </div>
                         <div className="text-right">
@@ -215,19 +212,21 @@ export default function PickleballPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Indoor Courts</CardTitle>
+                  <CardTitle>Outdoor Courts</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div>
-                      <h3 className="font-medium">City Recreation Center</h3>
+                      <h3 className="font-medium">
+                        Anteater Recreation Center
+                      </h3>
                       <p className="text-sm text-muted-foreground">
-                        6 dedicated courts, excellent lighting
+                        4 dedicated courts, good lighting
                       </p>
                       <p className="text-sm">⭐⭐⭐⭐⭐</p>
                     </div>
                     <div>
-                      <h3 className="font-medium">University Gymnasium</h3>
+                      <h3 className="font-medium">Bonita Canyon</h3>
                       <p className="text-sm text-muted-foreground">
                         4 courts, available weekends only
                       </p>
@@ -239,7 +238,7 @@ export default function PickleballPage() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Outdoor Courts</CardTitle>
+                  <CardTitle>Indoor Courts</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
@@ -263,48 +262,6 @@ export default function PickleballPage() {
             </div>
           </TabsContent>
         </Tabs>
-
-        <section className="space-y-6">
-          <h2 className="text-2xl font-semibold">Training Resources</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Books</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                  <li>The Art of Pickleball</li>
-                  <li>Smart Pickleball</li>
-                  <li>Pickleball Fundamentals</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>YouTube Channels</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                  <li>Pickleball Studio</li>
-                  <li>The Pickleball Coach</li>
-                  <li>Pro Pickleball Tips</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Training Apps</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                  <li>Pickleball Tracker</li>
-                  <li>Drill Master</li>
-                  <li>Pickleball Strategy Guide</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
       </div>
       <footer className="border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 text-center">
