@@ -26,7 +26,7 @@ export default function PhotographyPage() {
               <div className="col-span-1 md:col-span-2 lg:col-span-3 overflow-hidden rounded-lg aspect-[16/9]">
                 <Image
                   urlEndpoint = "https://ik.imagekit.io/ezshrimps/"
-                  src="/landscape_photo2.jpg?updatedAt=1746432310716"
+                  src="/golden_bridge.jpg?updatedAt=1746432310716"
                   alt="Featured landscape photo"
                   width={1200}
                   height={600}
@@ -36,7 +36,8 @@ export default function PhotographyPage() {
               {[1, 2, 3, 4, 5].map((i) => (
                 <div key={i} className="overflow-hidden rounded-lg aspect-[4/3]">
                   <Image
-                    src={`/gallery/landscape_photo${i}.jpg`}
+                    urlEndpoint = "https://ik.imagekit.io/ezshrimps/"
+                    src={`/landscape_photo${i}.jpg?updatedAt=1746432309490.jpg`}
                     alt={`Landscape photo ${i}`}
                     width={600}
                     height={400}

@@ -12,48 +12,48 @@ import Image from "next/image";
 export default function RhythmGamesPage() {
   const games = [
     {
-      name: "Beat Saber",
-      description: "VR rhythm game where you slash blocks with lightsabers",
+      name: "Maimai DX",
+      description: "a popular arcade rhythm game by Sega featuring tap, slide, and spin gameplay.",
       skill: 85,
       achievements: [
-        "Expert+ All Songs",
-        "Top 500 Global Ranking",
-        "Custom Map Creator",
+        "DX Rating 16087",
+        "Top 50 U.S. Ranking",
+        "Pink Version all SSS",
+        "3000+ games played"
       ],
-      image: "/placeholder.svg?height=200&width=200&text=Beat+Saber",
-    },
-    {
-      name: "osu!",
-      description: "Rhythm game based on clicking circles to the beat",
-      skill: 78,
-      achievements: [
-        "6 digit rank",
-        "FC on multiple 6* maps",
-        "1000+ hours played",
-      ],
-      image: "/placeholder.svg?height=200&width=200&text=osu!",
-    },
-    {
-      name: "Dance Dance Revolution",
-      description: "Arcade rhythm game played by stepping on arrow panels",
-      skill: 92,
-      achievements: [
-        "Cleared multiple 17s",
-        "Local tournament winner",
-        "Perfect Full Combo on 15s",
-      ],
-      image: "/placeholder.svg?height=200&width=200&text=DDR",
+      image: "/maimai-icon.jpg?height=200&width=200&text=Maimai+DX",
     },
     {
       name: "Taiko no Tatsujin",
       description: "Drum rhythm game based on Japanese taiko drums",
-      skill: 70,
+      skill: 55,
       achievements: [
-        "Cleared Oni difficulty songs",
-        "Collected 50+ songs",
-        "Arcade regular",
+        "FC on multiple 8-stars Oni difficulty songs",
+        "Cleared 100+ songs",
       ],
-      image: "/placeholder.svg?height=200&width=200&text=Taiko",
+      image: "/taiko-icon.svg?height=200&width=200&text=Taiko",
+    },
+    {
+      name: "osu!",
+      description: "Rhythm game based on clicking circles to the beat",
+      skill: 20,
+      achievements: [
+        "6 digit rank",
+        "FC on multiple 6* maps",
+        "100+ hours played",
+      ],
+      image: "/osu-icon.svg?height=200&width=200&text=osu!",
+    },
+    {
+      name: "Arcaea",
+      description: "New Dimension Rhythm Game",
+      skill: 65,
+      achievements: [
+        "PTT 12.24",
+        "PM+ on a level 8 song",
+        "Achieve EX+ on multiple level 10+ songs",
+      ],
+      image: "arcaea-icon.png?height=200&width=200&text=Arcaea",
     },
   ];
 
@@ -113,37 +113,6 @@ export default function RhythmGamesPage() {
           </div>
         </section>
 
-        <section className="space-y-6">
-          <h2 className="text-2xl font-semibold">My Setup</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Hardware</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc list-inside text-muted-foreground">
-                  <li>Custom DDR dance pad with metal panels</li>
-                  <li>Oculus Quest 2 for VR rhythm games</li>
-                  <li>Mechanical keyboard with red switches for osu!</li>
-                  <li>High-quality headphones for precise timing</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Software & Platforms</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc list-inside text-muted-foreground">
-                  <li>StepMania for home DDR practice</li>
-                  <li>osu! with custom skin and beatmaps</li>
-                  <li>Beat Saber with mod assistant for custom songs</li>
-                  <li>Arcade card for tracking scores at local arcades</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
       </div>
       <footer className="border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 text-center">

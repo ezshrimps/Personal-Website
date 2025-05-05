@@ -50,14 +50,14 @@ export default function PickleballPage() {
                   <Trophy className="h-5 w-5 text-primary" />
                   <div>
                     <p className="font-medium">Skill Level</p>
-                    <p className="text-sm text-muted-foreground">4.0</p>
+                    <p className="text-sm text-muted-foreground">Unrated</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Calendar className="h-5 w-5 text-primary" />
                   <div>
                     <p className="font-medium">Playing Since</p>
-                    <p className="text-sm text-muted-foreground">2019</p>
+                    <p className="text-sm text-muted-foreground">2024 Winter</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -65,7 +65,7 @@ export default function PickleballPage() {
                   <div>
                     <p className="font-medium">Home Court</p>
                     <p className="text-sm text-muted-foreground">
-                      City Recreation Center
+                      Anteater Recreation Center
                     </p>
                   </div>
                 </div>
@@ -73,7 +73,7 @@ export default function PickleballPage() {
                   <Users className="h-5 w-5 text-primary" />
                   <div>
                     <p className="font-medium">Preferred Format</p>
-                    <p className="text-sm text-muted-foreground">Doubles</p>
+                    <p className="text-sm text-muted-foreground">Singles/Doubles</p>
                   </div>
                 </div>
               </div>
