@@ -1,14 +1,12 @@
 # Personal-Website
 
-1. Compsci students
-2. Photographer
-3. Rhythm gamer player
-4. Pickleball player
+##TODO
+
+- calssify photos in ImageKit, finish the gallery
+- Add instagram and 500px link with icon at the front
+- Make rhythm games clickable, and add several more pages
 
 ```
-npm init -y
-npm install express ejs
-npm install react@18 react-dom@18
 npm install
 npm install @imagekit/next
 npm i next-cloudinary
