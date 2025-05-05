@@ -1,7 +1,13 @@
-import { Navbar } from "@/components/navbar"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import Image from "next/image"
+import { Navbar } from "@/components/navbar";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+import Image from "next/image";
 
 export default function RhythmGamesPage() {
   const games = [
@@ -9,40 +15,57 @@ export default function RhythmGamesPage() {
       name: "Beat Saber",
       description: "VR rhythm game where you slash blocks with lightsabers",
       skill: 85,
-      achievements: ["Expert+ All Songs", "Top 500 Global Ranking", "Custom Map Creator"],
+      achievements: [
+        "Expert+ All Songs",
+        "Top 500 Global Ranking",
+        "Custom Map Creator",
+      ],
       image: "/placeholder.svg?height=200&width=200&text=Beat+Saber",
     },
     {
       name: "osu!",
       description: "Rhythm game based on clicking circles to the beat",
       skill: 78,
-      achievements: ["6 digit rank", "FC on multiple 6* maps", "1000+ hours played"],
+      achievements: [
+        "6 digit rank",
+        "FC on multiple 6* maps",
+        "1000+ hours played",
+      ],
       image: "/placeholder.svg?height=200&width=200&text=osu!",
     },
     {
       name: "Dance Dance Revolution",
       description: "Arcade rhythm game played by stepping on arrow panels",
       skill: 92,
-      achievements: ["Cleared multiple 17s", "Local tournament winner", "Perfect Full Combo on 15s"],
+      achievements: [
+        "Cleared multiple 17s",
+        "Local tournament winner",
+        "Perfect Full Combo on 15s",
+      ],
       image: "/placeholder.svg?height=200&width=200&text=DDR",
     },
     {
       name: "Taiko no Tatsujin",
       description: "Drum rhythm game based on Japanese taiko drums",
       skill: 70,
-      achievements: ["Cleared Oni difficulty songs", "Collected 50+ songs", "Arcade regular"],
+      achievements: [
+        "Cleared Oni difficulty songs",
+        "Collected 50+ songs",
+        "Arcade regular",
+      ],
       image: "/placeholder.svg?height=200&width=200&text=Taiko",
     },
-  ]
+  ];
 
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-1 container py-12 space-y-8">
+      <div className="flex-1 container px-4 md:px-6 py-12 max-w-5xl mx-auto space-y-8">
         <section className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tighter">Rhythm Games</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            My passion for rhythm games, skills, achievements, and favorite titles.
+            My passion for rhythm games, skills, achievements, and favorite
+            titles.
           </p>
         </section>
 
@@ -69,7 +92,9 @@ export default function RhythmGamesPage() {
                     <div className="space-y-2">
                       <div className="flex items-center justify-between">
                         <span className="text-sm font-medium">Skill Level</span>
-                        <span className="text-sm text-muted-foreground">{game.skill}%</span>
+                        <span className="text-sm text-muted-foreground">
+                          {game.skill}%
+                        </span>
                       </div>
                       <Progress value={game.skill} className="h-2" />
                     </div>
@@ -122,9 +147,11 @@ export default function RhythmGamesPage() {
       </div>
       <footer className="border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 text-center">
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Zihao Xia. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Zihao Xia. All rights reserved.
+          </p>
         </div>
       </footer>
     </main>
-  )
+  );
 }

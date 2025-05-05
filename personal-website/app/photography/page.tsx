@@ -1,16 +1,17 @@
-import { Navbar } from "@/components/navbar"
-import Image from "next/image"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Navbar } from "@/components/navbar";
+import Image from "next/image";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function PhotographyPage() {
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-1 container py-12 space-y-8">
+      <div className="flex-1 container px-4 md:px-6 py-12 max-w-5xl mx-auto space-y-8">
         <section className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tighter">Photography</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            A collection of my favorite photographs across different genres and styles.
+            A collection of my favorite photographs across different genres and
+            styles.
           </p>
         </section>
 
@@ -108,9 +109,11 @@ export default function PhotographyPage() {
       </div>
       <footer className="border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 text-center">
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Zihao Xia. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Zihao Xia. All rights reserved.
+          </p>
         </div>
       </footer>
     </main>
-  )
+  );
 }

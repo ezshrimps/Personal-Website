@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -10,14 +10,14 @@ const navItems = [
   { name: "Photography", path: "/photography" },
   { name: "Rhythm Games", path: "/rhythm-games" },
   { name: "Pickleball", path: "/pickleball" },
-]
+];
 
 export function Navbar() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-16 items-center px-4 md:px-6">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="font-bold">Zihao Xia</span>
@@ -29,7 +29,9 @@ export function Navbar() {
                 href={item.path}
                 className={cn(
                   "transition-colors hover:text-foreground/80",
-                  pathname === item.path ? "text-foreground font-semibold" : "text-foreground/60",
+                  pathname === item.path
+                    ? "text-foreground font-semibold"
+                    : "text-foreground/60"
                 )}
               >
                 {item.name}
@@ -47,7 +49,9 @@ export function Navbar() {
                     href={item.path}
                     className={cn(
                       "whitespace-nowrap text-sm transition-colors hover:text-foreground/80",
-                      pathname === item.path ? "text-foreground font-semibold" : "text-foreground/60",
+                      pathname === item.path
+                        ? "text-foreground font-semibold"
+                        : "text-foreground/60"
                     )}
                   >
                     {item.name}
@@ -59,5 +63,5 @@ export function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }

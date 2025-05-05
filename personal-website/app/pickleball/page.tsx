@@ -1,18 +1,19 @@
-import { Navbar } from "@/components/navbar"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Image from "next/image"
-import { Trophy, Calendar, MapPin, Users } from "lucide-react"
+import { Navbar } from "@/components/navbar";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image";
+import { Trophy, Calendar, MapPin, Users } from "lucide-react";
 
 export default function PickleballPage() {
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-1 container py-12 space-y-8">
+      <div className="flex-1 container px-4 md:px-6 py-12 max-w-5xl mx-auto space-y-8">
         <section className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tighter">Pickleball</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            My journey in pickleball, tournaments, equipment, and favorite places to play.
+            My journey in pickleball, tournaments, equipment, and favorite
+            places to play.
           </p>
         </section>
 
@@ -23,14 +24,18 @@ export default function PickleballPage() {
             </CardHeader>
             <CardContent>
               <p className="mb-4">
-                I started playing pickleball in 2019 after being introduced to it by friends. What began as a casual
-                weekend activity quickly turned into a passion. I've since participated in local tournaments, improved
-                my skills through regular practice, and become part of a vibrant pickleball community.
+                I started playing pickleball in 2019 after being introduced to
+                it by friends. What began as a casual weekend activity quickly
+                turned into a passion. I've since participated in local
+                tournaments, improved my skills through regular practice, and
+                become part of a vibrant pickleball community.
               </p>
               <p>
-                Currently playing at a 4.0 skill level, I enjoy both singles and doubles matches, though I find doubles
-                to be more strategic and engaging. My playing style focuses on consistent dinking and strategic
-                third-shot drops, with a strong preference for control over power.
+                Currently playing at a 4.0 skill level, I enjoy both singles and
+                doubles matches, though I find doubles to be more strategic and
+                engaging. My playing style focuses on consistent dinking and
+                strategic third-shot drops, with a strong preference for control
+                over power.
               </p>
             </CardContent>
           </Card>
@@ -59,7 +64,9 @@ export default function PickleballPage() {
                   <MapPin className="h-5 w-5 text-primary" />
                   <div>
                     <p className="font-medium">Home Court</p>
-                    <p className="text-sm text-muted-foreground">City Recreation Center</p>
+                    <p className="text-sm text-muted-foreground">
+                      City Recreation Center
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -98,7 +105,9 @@ export default function PickleballPage() {
                       />
                       <div>
                         <h3 className="font-medium">Selkirk Amped Epic</h3>
-                        <p className="text-sm text-muted-foreground">My main paddle for competitive play</p>
+                        <p className="text-sm text-muted-foreground">
+                          My main paddle for competitive play
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -110,8 +119,12 @@ export default function PickleballPage() {
                         className="rounded-md"
                       />
                       <div>
-                        <h3 className="font-medium">Paddletek Tempest Wave II</h3>
-                        <p className="text-sm text-muted-foreground">Backup paddle with different feel</p>
+                        <h3 className="font-medium">
+                          Paddletek Tempest Wave II
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          Backup paddle with different feel
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -147,11 +160,15 @@ export default function PickleballPage() {
                       <div className="flex justify-between items-start">
                         <div>
                           <h3 className="font-medium">City Championship</h3>
-                          <p className="text-sm text-muted-foreground">June 2023</p>
+                          <p className="text-sm text-muted-foreground">
+                            June 2023
+                          </p>
                         </div>
                         <div className="text-right">
                           <p className="font-medium">3rd Place</p>
-                          <p className="text-sm text-muted-foreground">Men's Doubles 4.0</p>
+                          <p className="text-sm text-muted-foreground">
+                            Men's Doubles 4.0
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -159,23 +176,33 @@ export default function PickleballPage() {
                       <div className="flex justify-between items-start">
                         <div>
                           <h3 className="font-medium">Regional Open</h3>
-                          <p className="text-sm text-muted-foreground">September 2022</p>
+                          <p className="text-sm text-muted-foreground">
+                            September 2022
+                          </p>
                         </div>
                         <div className="text-right">
                           <p className="font-medium">Quarter-finalist</p>
-                          <p className="text-sm text-muted-foreground">Mixed Doubles 3.5</p>
+                          <p className="text-sm text-muted-foreground">
+                            Mixed Doubles 3.5
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="font-medium">Community Center Tournament</h3>
-                          <p className="text-sm text-muted-foreground">March 2022</p>
+                          <h3 className="font-medium">
+                            Community Center Tournament
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            March 2022
+                          </p>
                         </div>
                         <div className="text-right">
                           <p className="font-medium">1st Place</p>
-                          <p className="text-sm text-muted-foreground">Men's Singles 3.5</p>
+                          <p className="text-sm text-muted-foreground">
+                            Men's Singles 3.5
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -194,12 +221,16 @@ export default function PickleballPage() {
                   <div className="space-y-4">
                     <div>
                       <h3 className="font-medium">City Recreation Center</h3>
-                      <p className="text-sm text-muted-foreground">6 dedicated courts, excellent lighting</p>
+                      <p className="text-sm text-muted-foreground">
+                        6 dedicated courts, excellent lighting
+                      </p>
                       <p className="text-sm">⭐⭐⭐⭐⭐</p>
                     </div>
                     <div>
                       <h3 className="font-medium">University Gymnasium</h3>
-                      <p className="text-sm text-muted-foreground">4 courts, available weekends only</p>
+                      <p className="text-sm text-muted-foreground">
+                        4 courts, available weekends only
+                      </p>
                       <p className="text-sm">⭐⭐⭐⭐</p>
                     </div>
                   </div>
@@ -214,12 +245,16 @@ export default function PickleballPage() {
                   <div className="space-y-4">
                     <div>
                       <h3 className="font-medium">Memorial Park</h3>
-                      <p className="text-sm text-muted-foreground">8 dedicated courts, great community</p>
+                      <p className="text-sm text-muted-foreground">
+                        8 dedicated courts, great community
+                      </p>
                       <p className="text-sm">⭐⭐⭐⭐⭐</p>
                     </div>
                     <div>
                       <h3 className="font-medium">Lakeside Courts</h3>
-                      <p className="text-sm text-muted-foreground">4 courts, beautiful scenery</p>
+                      <p className="text-sm text-muted-foreground">
+                        4 courts, beautiful scenery
+                      </p>
                       <p className="text-sm">⭐⭐⭐⭐</p>
                     </div>
                   </div>
@@ -273,9 +308,11 @@ export default function PickleballPage() {
       </div>
       <footer className="border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 text-center">
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Zihao Xia. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Zihao Xia. All rights reserved.
+          </p>
         </div>
       </footer>
     </main>
-  )
+  );
 }
