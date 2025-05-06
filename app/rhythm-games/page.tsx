@@ -23,7 +23,7 @@ export default function RhythmGamesPage() {
         "3000+ games played",
         "6th place in Kuma Cup",
       ],
-      image: "/maimai-icon.jpg?height=200&width=200&text=Maimai+DX",
+      image: "/maimai.png?height=200&width=200&text=Maimai+DX",
     },
     {
       name: "Taiko no Tatsujin",
