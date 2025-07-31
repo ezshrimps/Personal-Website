@@ -11,92 +11,37 @@ import { Badge } from "@/components/ui/badge";
 import { TrendingUp, TrendingDown, Info } from "lucide-react";
 
 const leaderboardData = [
-  // THIS IS FAKE DATA, JUST FOR THE DEMO
-  {
-    rank: 1,
-    company: "Xelix",
-    category: "AI Infrastructure",
-    amount: "16M",
-    change: 25,
-    description: "Enterprise AI platform",
-  },
-  {
-    rank: 2,
-    company: "Vanta",
-    category: "Security",
-    amount: "15M",
-    change: -9,
-    description: "Automated compliance platform",
-  },
-  {
-    rank: 3,
-    company: "Engine AI（众擎）",
-    category: "AI Tools",
-    amount: "15M",
-    change: 2,
-    description: "AI-powered development tools",
-  },
-  {
-    rank: 4,
-    company: "Reka AI",
-    category: "Machine Learning",
-    amount: "11M",
-    change: -2,
-    description: "Multimodal AI research",
-  },
-  {
-    rank: 5,
-    company: "Nudge",
-    category: "Fintech",
-    amount: "10M",
-    change: 15,
-    description: "Financial wellness platform",
-  },
-  {
-    rank: 6,
-    company: "Buena",
-    category: "PropTech",
-    amount: "5.8M",
-    change: 3,
-    description: "Real estate technology",
-  },
-  {
-    rank: 7,
-    company: "Radical AI",
-    category: "AI Research",
-    amount: "5.5M",
-    change: 105201,
-    description: "Advanced AI algorithms",
-  },
-  {
-    rank: 8,
-    company: "LegalOn Technologies",
-    category: "LegalTech",
-    amount: "5M",
-    change: 38,
-    description: "AI-powered legal solutions",
-  },
-  {
-    rank: 9,
-    company: "Swift Navigation",
-    category: "Navigation",
-    amount: "5M",
-    change: 186,
-    description: "Precise positioning technology",
-  },
-  {
-    rank: 10,
-    company: "Ashby",
-    category: "HR Tech",
-    amount: "5M",
-    change: -12,
-    description: "Recruiting and talent management",
-  },
+  { company: "Xelix", amount: "16M", change: 5 },
+  { company: "Vanta", amount: "15M", change: 5 },
+  { company: "Engine AI（众擎）", amount: "15M", change: 5 },
+  { company: "Reka AI", amount: "11M", change: 5 },
+  { company: "Nudge", amount: "10M", change: 5 },
+  { company: "Buena", amount: "5.8M", change: 5 },
+  { company: "Radical AI", amount: "5.5M", change: 5 },
+  { company: "LegalOn Technologies", amount: "5M", change: 5 },
+  { company: "Swift Navigation", amount: "5M", change: 5 },
+  { company: "Ashby", amount: "5M", change: 5 },
 ];
 
+// Convert amount to number for ranking
+function parseAmount(amount: string) {
+  if (amount.endsWith("M")) {
+    return parseFloat(amount) * 1_000_000;
+  }
+  if (amount.endsWith("K")) {
+    return parseFloat(amount) * 1_000;
+  }
+  return parseFloat(amount);
+}
+
 export default function FundingLeaderboard() {
-  const leftColumn = leaderboardData.slice(0, 5);
-  const rightColumn = leaderboardData.slice(5, 10);
+  // ranking by amount
+  const sortedData = [...leaderboardData]
+    .sort((a, b) => parseAmount(b.amount) - parseAmount(a.amount))
+    .map((item, index) => ({ ...item, rank: index + 1 }));
+
+  const leftColumn = sortedData.slice(0, 5);
+  const rightColumn = sortedData.slice(5, 10);
 
   return (
     <Card className="w-full">
@@ -126,12 +71,6 @@ export default function FundingLeaderboard() {
                 <div className="flex-1 space-y-1">
                   <div className="font-semibold text-foreground">
                     {item.company}
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    by{" "}
-                    <span className="underline">
-                      {item.category.toLowerCase()}
-                    </span>
                   </div>
                 </div>
                 <div className="text-right space-y-1">
@@ -163,12 +102,6 @@ export default function FundingLeaderboard() {
                 <div className="flex-1 space-y-1">
                   <div className="font-semibold text-foreground">
                     {item.company}
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    by{" "}
-                    <span className="underline">
-                      {item.category.toLowerCase()}
-                    </span>
                   </div>
                 </div>
                 <div className="text-right space-y-1">
