@@ -150,7 +150,7 @@ export default function CSPage() {
                     <span>GitHub</span>
                   </Link>
                   <Link
-                    href="https://maimai.yukineko2233.net/"
+                    href="https://maimai.yukineko2233.top/"
                     className="flex items-center gap-1 text-sm text-primary hover:underline"
                   >
                     <ExternalLink className="h-4 w-4" />
