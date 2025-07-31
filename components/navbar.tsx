@@ -10,6 +10,7 @@ const navItems = [
   { name: "Photography", path: "/photography" },
   { name: "Rhythm Games", path: "/rhythm-games" },
   { name: "Pickleball", path: "/pickleball" },
+  { name: "Test", path: "/test" },
 ];
 
 export function Navbar() {
