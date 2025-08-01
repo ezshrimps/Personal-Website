@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import {
   BarChart,
   Bar,
@@ -7,7 +8,7 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
-  LabelList,
+  Legend,
 } from "recharts";
 import {
   Card,
@@ -17,45 +18,55 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const data = [
-  { name: "Xelix", amount: 16000 },
-  { name: "Vanta", amount: 15000 },
-  { name: "Engine AI（众擎）", amount: 15000 },
-  { name: "Reka AI", amount: 11000 },
-  { name: "Nudge", amount: 10000 },
-  { name: "Buena", amount: 5800 },
-  { name: "Radical AI", amount: 5500 },
-  { name: "LegalOn Technologies", amount: 5000 },
-  { name: "Swift Navigation", amount: 5000 },
-  { name: "Ashby", amount: 5000 },
-];
+export default function FundingStackedBarChart() {
+  const [data, setData] = useState([]);
 
-export default function FundingBarChart() {
+  useEffect(() => {
+    fetch("/data/fundingData_full.json")
+      .then((res) => res.json())
+      .then((json) => setData(json));
+  }, []);
+
+  const colors = [
+    "#8884d8",
+    "#82ca9d",
+    "#ffc658",
+    "#ff7f50",
+    "#8dd1e1",
+    "#a4de6c",
+    "#d0ed57",
+    "#ffc0cb",
+    "#00c49f",
+    "#ffbb28",
+    "#888888",
+    "#ff69b4",
+  ];
+
+  if (data.length === 0) return <div>Loading...</div>;
+
+  const companyKeys = Object.keys(data[0]).filter((key) => key !== "year");
+
   return (
     <Card className="w-full">
       <CardHeader>
         <CardTitle className="text-2xl font-bold">
-          『AI Weekly』Funding Top 10
+          『AI Weekly』Funding by Year
         </CardTitle>
-        <CardDescription>Amount Raised (in $10K)</CardDescription>
+        <CardDescription>
+          Amount Raised (in $10K) by Year & Company
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="h-[500px] w-full">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
-              layout="vertical"
               data={data}
               margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-              barSize={20}
+              barCategoryGap={0}
+              barSize={30}
             >
-              <XAxis type="number" hide />
-              <YAxis
-                type="category"
-                dataKey="name"
-                width={150}
-                tick={{ fontSize: 12 }}
-                className="text-muted-foreground"
-              />
+              <XAxis dataKey="year" />
+              <YAxis />
               <Tooltip
                 contentStyle={{
                   backgroundColor: "hsl(var(--background))",
@@ -64,19 +75,15 @@ export default function FundingBarChart() {
                   color: "hsl(var(--foreground))",
                 }}
               />
-              <Bar
-                dataKey="amount"
-                fill="hsl(var(--primary))"
-                radius={[0, 4, 4, 0]}
-              >
-                <LabelList
-                  dataKey="amount"
-                  position="right"
-                  fill="hsl(var(--primary))"
-                  fontSize={12}
-                  fontWeight="500"
+              {/* <Legend /> */}
+              {companyKeys.map((key, index) => (
+                <Bar
+                  key={key}
+                  dataKey={key}
+                  stackId="a"
+                  fill={colors[index % colors.length]}
                 />
-              </Bar>
+              ))}
             </BarChart>
           </ResponsiveContainer>
         </div>
